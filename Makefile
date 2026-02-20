@@ -7,13 +7,14 @@ INCLUDES = -I$(LIB60870_HOME)/src/inc/api \
 LIB_NAME = $(LIB60870_HOME)/build/src/liblib60870.a
 LDLIBS   = -lpthread
 
-SRC_DIR   = src
-BUILD_DIR = build
+SRC_DIR    = src
+BUILD_DIR  = build
+BIN_DIR    = bin
 SCRIPT_DIR = scripts
 
-BIN_POC   = $(BUILD_DIR)/plague_v_poc
-BIN_MULTI = $(BUILD_DIR)/plague_v_multi
-BIN_RECON = $(BUILD_DIR)/plague_v_recon
+BIN_POC   = $(BIN_DIR)/plague_v_poc
+BIN_MULTI = $(BIN_DIR)/plague_v_multi
+BIN_RECON = $(BIN_DIR)/plague_v_recon
 
 OBJS = \
   $(BUILD_DIR)/plague_v_poc.o \
@@ -27,7 +28,7 @@ OBJS = \
 all: dirs $(BIN_POC) $(BIN_MULTI) $(BIN_RECON)
 
 dirs:
-	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(BUILD_DIR) $(BIN_DIR)
 
 # ─── Milestone 1: Single-command PoC ───
 $(BIN_POC): $(BUILD_DIR)/plague_v_poc.o $(LIB_NAME)
@@ -64,5 +65,5 @@ pipeline: all
 
 # ─── Cleanup ───
 clean:
-	rm -rf $(BUILD_DIR)
-	@echo "[+] Cleaned ($(BUILD_DIR) removed)"
+	rm -rf $(BUILD_DIR) $(BIN_DIR)
+	@echo "[+] Cleaned ($(BUILD_DIR) and $(BIN_DIR) removed)"
