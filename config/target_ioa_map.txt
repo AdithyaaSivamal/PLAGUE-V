@@ -1,0 +1,13 @@
+# Target IOA mapping for simulated substation
+# Format: IOA  Name  TargetState
+# Lines starting with # are comments, blank lines are ignored
+# State: OFF = open breaker (0), ON = close breaker (1)
+
+5000  Main_Breaker_A       OFF
+5001  Backup_Relay_B       OFF
+5002  Emergency_Cutoff     OFF
+5003  Feeder_Line_1        OFF
+5004  Feeder_Line_2        OFF
+5005  Generator_Disconnect OFF
+5006  Transformer_Breaker  OFF
+5007  Safety_Interlock     OFF
