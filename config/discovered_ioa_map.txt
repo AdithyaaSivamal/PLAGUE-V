@@ -1,0 +1,19 @@
+# Auto-discovered IOAs from 10.10.10.10:2404 on 2026-02-16 06:17:44
+# Format: IOA  Name  TargetState
+# Total: 15 IOAs discovered
+
+110    MS_IOA_110  OFF
+100    MS_IOA_100  OFF
+101    MS_IOA_101  OFF
+102    MS_IOA_102  OFF
+104    SP_IOA_104  ON
+105    SP_IOA_105  OFF
+300    SP_IOA_300  ON
+301    SP_IOA_301  OFF
+302    SP_IOA_302  ON
+303    SP_IOA_303  OFF
+304    SP_IOA_304  ON
+305    SP_IOA_305  OFF
+306    SP_IOA_306  ON
+307    SP_IOA_307  OFF
+500    BS_IOA_500  OFF
